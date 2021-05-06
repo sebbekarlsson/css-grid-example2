@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: grid;
+    width: 100%;
+    height: 64px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: lightgray;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navbar .nav-section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, max-content));
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(60, 60, 60);
+}
+
+.navbar .nav-section:last-of-type {
+    justify-content: flex-end;
+}
+
+.navbar .nav-section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-section:nth-of-type(2) {
+    justify-content: center;
+}
